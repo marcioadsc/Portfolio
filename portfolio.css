@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root
+{
+    --blue: #313579;
+}
+*
+{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .5s linear;
+}
+
+html
+{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar
+{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background: rgb(174, 172, 172);
+}
+
+.fundo img
+{
+    size: 100%;
+}
+body
+{
+    background-color: black;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: rgb(174, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .eu img
+{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--blue);
+}
+
+header .eu .nome
+{
+    font-size: 3.5rem;
+    color: black;
+}
+
+header .eu .subtitulo
+{
+    font-size: 2rem;
+    color: black;
+}
+
+header .barra
+{
+    width: 100%;
+}
+
+header .barra ul
+{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .barra ul li a
+{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+/*Menu*/
+
+#menu
+{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+section
+{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    flex-flow:column;
+    padding: 0 10rem;
+    margin: 1.5rem;
+}
+
+.home h3
+{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.home h1
+{
+    font-size: 5rem;
+    color: black;
+}
+
+.home p
+{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+/*Sobre*/
+
+.cabecalho
+{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid black;
+    color: white;
+}
+
+.cabecalho span
+{
+    color: black    ;
+}
+
+.sobre .info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.sobre .info .linha
+{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 1rem;
+}
+
+.sobre .info .linha h3
+{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.sobre .info .linha h3 span
+{
+    color: white;
+    padding: 0 5rem;
+}
+
+/*Conhecimento*/
+
+.conhecimento .h3
+{   
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid black;
+    color: white;
+}
+.conhecimento .habilidades
+{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.conhecimento .habilidades h3
+{
+    font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.conhecimento .habilidades .box
+{
+    width: 45%;
+    background: #eee;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0 0 1em gold, 0 0 1em red;
+}
+
+.conhecimento .habilidades .box span
+{
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+/* Hobbies*/
+
+.hobbies .h3
+{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid black;
+    color: white;
+}
+
+.hobbies .gostos
+{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.hobbies .gostos .h4
+{
+    width: 31%;
+    background: #eee;
+    text-align: left;
+    font-size: 2.25rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.hobbies .gostos .h4 span
+{
+    color: var(--blue);
+}
+
+.hobbies article
+{
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies .musicas .h4
+{
+    width: 100%;
+    background: #eee;
+    text-align: left;
+    font-size: 2.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.hobbies .musicas a
+{
+    width: 20rem;
+    font-size: 2rem;
+    text-align: center;
+    background: #eee;
+    margin-bottom: 1rem;
+}
+
+.hobbies .ler .h4
+{
+    width: 100%;
+    background: #eee;
+    text-align: left;
+    font-size: 2.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.hobbies .ler .box
+{
+    width: auto;
+    color: aliceblue;
+    align-items: center;
+}
+
+.hobbies .ler .box a img
+{
+    height: 30rem;
+    width: 45%;
+    margin: 1rem;
+    border-radius: 5%;
+    border-color: var(--blue);
+}
+
+.hobbies .tocar h4
+{
+    width: 100%;
+    background: #eee;
+    text-align: left;
+    font-size: 2.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.hobbies .tocar .box
+{
+    width: auto;
+    color: aliceblue;
+    align-items: center;
+}
+.hobbies .tocar .box img
+{
+    height: 30rem;
+    width: 45%;
+    margin: 1rem;
+    border-radius: 5%;
+    border-color: var(--blue);
+}
+
+/*Contato*/
+
+.contato .h1
+{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid black;
+    color: white;
+}
+
+.contato .linha .conteudo .info1
+{
+    width: 100%;
+}
+
+.contato .linha .conteudo .info1 img
+{
+    height: 30px;
+    width: 30px;
+}
+
+.contato .linha .conteudo .info1 a   
+{
+    width: 18.5%;
+    font-size: 2rem;
+    font-weight: auto;
+    display: block;
+    padding: 1rem;
+    background: black;
+    color: white;
+    border-radius: 5rem;
+}
+
+.contato .linha
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato .linha .conteudo
+{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contato .linha .conteudo .titulo 
+{
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contato .linha .conteudo .info h3
+{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-weight: normal;
+    background-color: black;
+    border-radius: 5rem;
+}
+/* Responsivo - Media Queries*/
+
+@media(max-width: 1200px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+
+    .home
+    {
+        padding: 1rem 4rem;
+    }
+}
+
+/* Responsivo 991px*/
+@media(max-width: 991px)
+{
+    header
+    {
+        left: -120%;
+    }
+
+    #menu
+    {
+        display: block;
+    }
+
+    header.toggle
+    {
+        left: 0%;
+    }
+
+    body 
+    {
+        padding: 0;
+    }
+}
+
+/* Responsivo 700px*/
+@media(max-width: 700px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+}
+
